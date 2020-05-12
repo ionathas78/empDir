@@ -6,7 +6,7 @@ const _CONSONANTS_UNCOMMON_LIST = "kh,qu,v,w,wh,x,z";
 const _CONSONANTS_INITIAL_RESTRICTIONS = "x";
 const _CONSONANTS_TERMINAL_RESTRICTIONS = "qu,wh";
 const _VOWELS_LIST = "a,e,i,o,u"
-const _RESTRICTED_LETTER_COMBINATIONS = "whw,bd,uu,shkh,mv,lj,hh"
+const _RESTRICTED_LETTER_COMBINATIONS = "whw,bd,uu,shkh,mv,lj,hh,vj"
 
 //      Word Settings
 const _GIVENNAME_TWOSYLLABLES = 0.4;
