@@ -1,27 +1,68 @@
 import React from "react";
-// import Employee from "./employee";
 
-const EmployeeTable = empList => {
+const EmployeeTable = props => {
     let html = [];
-    empList.forEach(item => {
+    props.empList.forEach(item => {
         html.push(item.toHTML_TableRow());
     })
-    // console.log(empList);
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Department</th>
-                    <th>Phone</th>
-                    <th>Office</th>
-                    <th>Computer</th>
-                </tr>
-            </thead>
-            <tbody>
-                {html}
-            </tbody>
-        </table>
+        <div>
+            <h1>Employees</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th style={{ padding: "2px 5px" }}>
+                            <a 
+                                href="/sortby/name"
+                                style={{ cursor: "pointer", color: "#aaaaff" }}
+                                onClick={props.byNameSorter}
+                            >
+                                Name
+                            </a>
+                        </th>
+                        <th style={{ padding: "2px 5px" }}>
+                            <a 
+                                href="/sortby/dept"
+                                style={{ cursor: "pointer", color: "#aaaaff" }}
+                                onClick={props.byDeptSorter}
+                            >
+                                Department
+                            </a>
+                        </th>
+                        <th style={{ padding: "2px 10px" }}>
+                            <a 
+                                href="/sortby/phone"
+                                style={{ cursor: "pointer", color: "#aaaaff" }}
+                                onClick={props.byPhoneSorter}
+                            >
+                                Phone
+                            </a>
+                        </th>
+                        <th style={{ padding: "2px 10px" }}>
+                            <a 
+                                href="/sortby/office"
+                                style={{ cursor: "pointer", color: "#aaaaff" }}
+                                onClick={props.byOfficeSorter}
+                            >
+                                Office
+                            </a>
+                        </th>
+                        <th style={{ padding: "2px 5px" }}>
+                            <a 
+                                href="/sortby/computer"
+                                style={{ cursor: "pointer", color: "#aaaaff" }}
+                                onClick={props.byComputerSorter}
+                            >
+                                Computer
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {html}
+                </tbody>
+            </table>
+        </div>
     )
 }
 
