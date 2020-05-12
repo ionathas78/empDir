@@ -2,7 +2,7 @@
   "name": "program",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://intense-citadel-59440.herokuapp.com/",
+  "homepage": "https://ionathas78.github.io/empDir",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -32,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
